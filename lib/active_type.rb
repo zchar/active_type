@@ -2,6 +2,8 @@
 
 require 'active_type/version'
 require 'active_record'
+# require 'edge_rider'
+require 'active_type/active_record_ext'
 require 'active_type/record'
 require 'active_type/object'
 
