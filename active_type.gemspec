@@ -20,6 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake"
 
   s.add_runtime_dependency('activerecord', '>= 3.2')
-  # s.add_runtime_dependency('edge_rider', '>= 0.3.1')
 
 end
