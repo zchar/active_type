@@ -32,6 +32,12 @@ module ActiveType
           end
         end
 
+        def type_condition(table = arel_table)
+          sti_column = arel_attribute(inheritance_column, table)
+          sti_names  = ([self] + descendants).map(&:sti_name).uniq
+          sti_column.in(sti_names)
+        end
+
       end
 
     end
